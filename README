@@ -1,0 +1,22 @@
+Dependencies:
+	Degub.h
+Source Files:
+	Degub.c
+
+Full documentation on usage is found in Degub.h
+
+Macros:
+	DEGUB_ERROR_ON:
+		- enables printing of error messages to stderr
+	DEGUB_WARN_ON:
+		- enables printing of warning messages to stderr
+	DEGUB_INFO_ON:
+		- enables printing of information messages to stderr
+
+Functions:
+	void error(char*,int)
+		- prints an error message to stderr
+	void warn(char*,int)
+		- prints an error message to stderr
+	void info(char*,int)
+		- prints an error message to stderr
