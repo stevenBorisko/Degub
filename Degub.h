@@ -40,7 +40,7 @@ msg (char*)
 code (int)
 	- Custom status code to be printed out along with the message.
 
-Print an error message to stderr
+Print an warning message to stderr
 */
 void warn(char* msg, int code);
 
@@ -52,7 +52,7 @@ msg (char*)
 code (int)
 	- Custom status code to be printed out along with the message.
 
-Print an error message to stderr
+Print an information message to stderr
 */
 void info(char* msg, int code);
 
