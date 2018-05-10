@@ -14,9 +14,9 @@ Macros:
 		- enables printing of information messages to stderr
 
 Functions:
-	void error(char*,int)
+	void error(char*, int)
 		- prints an error message to stderr
-	void warn(char*,int)
+	void warn(char*, int)
 		- prints an error message to stderr
-	void info(char*,int)
+	void info(char*, int)
 		- prints an error message to stderr
