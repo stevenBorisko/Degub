@@ -4,6 +4,8 @@ Source Files:
 	Degub.c
 Makefile:
 	Degub.mk
+Object:
+	Degub.o
 
 Full documentation on usage is found in Degub.h
 
