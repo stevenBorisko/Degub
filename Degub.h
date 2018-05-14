@@ -26,7 +26,9 @@ msg (char*)
 	- Custom message to be printed out.
 code (int)
 	- This should be the errno set from the erroneous function call.
-	- This function will print the string associated with the errno.
+	- This function will print the string associated with the errno if this
+	value is greater than zero. If it is equal to zero, no string will be
+	printed after it.
 
 Print an error message to stderr
 */

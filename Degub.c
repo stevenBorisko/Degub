@@ -12,7 +12,10 @@ void error(char* msg, int code) {
 	pthread_mutex_lock(&mutex);
 	fprintf(stderr, ANSI_REDBLD "[ERROR]: " ANSI_TXTRST);
 	fprintf(stderr,"%s\n",msg);
-	fprintf(stderr,"\terror code: %d - %s\n",code,strerror(code));
+	fprintf(stderr,"\terror code: %d",code);
+	if(code)
+		fprintf(stderr," - %s",strerror(code));
+	fprintf(stderr,"\n");
 	pthread_mutex_unlock(&mutex);
 	#endif
 }
