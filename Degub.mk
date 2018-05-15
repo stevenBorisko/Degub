@@ -5,3 +5,4 @@ $(DEGUB_PATH)Degub.o: $(DEGUB_PATH)Degub.c $(DEGUB_PATH)Degub.h
 	$(CC) -c $< -o $@ $(CFLAGS)
 
 DegubClean:
+	rm -f $(DEGUB_PATH)*.o
