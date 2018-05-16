@@ -16,6 +16,8 @@ Macros:
 		- enables printing of warning messages to stderr
 	DEGUB_INFO_ON:
 		- enables printing of information messages to stderr
+	DEGUB_SUCC_ON:
+		- enables printing of success messages to stderr
 
 Functions:
 	void error(char*, int)
@@ -24,3 +26,5 @@ Functions:
 		- prints an warning message to stderr
 	void info(char*, int)
 		- prints an information message to stderr
+	void succ(char*, int)
+		- prints a success message to stderr

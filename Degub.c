@@ -2,6 +2,7 @@
 
 #define ANSI_REDBLD "\33[31;1m"
 #define ANSI_YLWBLD "\33[33;1m"
+#define ANSI_GRNBLD "\33[32;1m"
 #define ANSI_WHTBLD "\33[37;1m"
 #define ANSI_TXTRST "\33[0m"
 
@@ -36,6 +37,16 @@ void info(char* msg, int code) {
 	fprintf(stderr, ANSI_WHTBLD " [INFO]: " ANSI_TXTRST);
 	fprintf(stderr,"%s\n",msg);
 	fprintf(stderr,"\tinformation code: %d\n",code);
+	pthread_mutex_unlock(&mutex);
+	#endif
+}
+
+void succ(char* msg, int code) {
+	#if DEGUB_INFO_ON
+	pthread_mutex_lock(&mutex);
+	fprintf(stderr, ANSI_GRNBLD " [SUCC]: " ANSI_TXTRST);
+	fprintf(stderr,"%s\n",msg);
+	fprintf(stderr,"\tsuccess code: %d\n",code);
 	pthread_mutex_unlock(&mutex);
 	#endif
 }

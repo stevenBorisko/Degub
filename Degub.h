@@ -14,6 +14,7 @@
 #define DEGUB_ERROR_ON 1
 #define DEGUB_WARN_ON 1
 #define DEGUB_INFO_ON 1
+#define DEGUB_SUCC_ON 1
 
 //----------------------------------------------------------------------------//
 // --- Main Function Declarations ---
@@ -57,5 +58,17 @@ code (int)
 Print an information message to stderr
 */
 void info(char* msg, int code);
+
+/*
+--- succ --- 
+
+msg (char*)
+	- Custom message to be printed out.
+code (int)
+	- Custom status code to be printed out along with the message.
+
+Print a success message to stderr
+*/
+void succ(char* msg, int code);
 
 #endif
