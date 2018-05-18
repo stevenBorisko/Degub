@@ -42,7 +42,7 @@ void info(char* msg, int code) {
 }
 
 void succ(char* msg, int code) {
-	#if DEGUB_INFO_ON
+	#if DEGUB_SUCC_ON
 	pthread_mutex_lock(&mutex);
 	fprintf(stderr, ANSI_GRNBLD " [SUCC]: " ANSI_TXTRST);
 	fprintf(stderr,"%s\n",msg);
